@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
 *main - main entry point
+*Description: using puts to output
 *return: always 0 (success)
 */
 int main(void)
