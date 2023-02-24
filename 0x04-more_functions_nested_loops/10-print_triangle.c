@@ -2,29 +2,26 @@
 
 /**
  * print_triangle - print a triangle using '#'
- * size: is 0 or less
+ * @size: is 0 or less
  */
 
 void print_triangle(int size)
 {
 	int i, j;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-		return;
-	}
-
-	for (i = 0; i < size; i++)
-	{
-		for (j = 0; j < size; j++)
-			if (j < size - i - 1)
-			{
+		for (i = 1; i <= size; i++)
+		{
+			for (j = size - i; j > 0; j--)
 				_putchar(' ');
-			}
-			else
-			{
+
+			for (j = 0; j < i; j++)
 				_putchar('#');
-			}
+
+			if (i == size)
+				continue;
+		}
 	}
+	_putchar('\n');
 }
