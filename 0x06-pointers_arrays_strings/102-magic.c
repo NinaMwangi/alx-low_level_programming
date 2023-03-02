@@ -10,7 +10,7 @@ int main(void)
 	p = &n;
 /*
  * main - Entry point
- * Description: you are not allowed to use a
+ * @a: the array being appended
  * - you are not allowed to use a
  * - you are not allowed to modify p
  * - only one statement
